@@ -12,6 +12,11 @@
                     {!! Form::label('content', 'タスク名:') !!}
                     {!! Form::text('content', null, ['class' => 'form-control']) !!}
                 </div>
+                
+                <div class="form-group">
+                    {!! Form::label('status', '状態：') !!}
+                    {!! Form::select('status', ['yet' => 'ノータッチ', 'progress' => '進行中', 'finish' => '終了'], null, ['class' => 'form-control']) !!}
+                </div>
         
                 {!! Form::submit('投稿', ['class' => 'btn btn-primary']) !!}
         
